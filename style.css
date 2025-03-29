@@ -69,7 +69,8 @@ footer {
         margin: 10px; /* Zmniejszenie marginesu sekcji dla mniejszych ekranów */
         padding: 15px; /* Zmniejszenie paddingu sekcji dla mniejszych ekranów */
     }
-    footer {
-        padding: 5px 0; /* Zmniejszenie paddingu stopki dla mniejszych ekranów */
+
+        footer {
+            padding: 5px 0; /* Zmniejszenie paddingu stopki */
+        }
     }
-}
