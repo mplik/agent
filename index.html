@@ -10,6 +10,8 @@
         <meta name="twitter:image" content="https://github.com/mplik/agent/blob/main/images/ma%C5%82y_bia%C5%82y_domek.png?raw=true" />
         <meta property="og:url" content="https://mplik.github.io/agent/" />
         <link rel="stylesheet" href="style.css">
+        <!-- Dodanie Stripe.js do strony -->
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
     </head>
     <body>
         <header>
@@ -23,6 +25,14 @@
         <section id="oferta">
             <h2>Nasza Oferta</h2>
             <p>Oferujemy szeroki wybór nieruchomości, w tym mieszkania, lokale, domy oraz działki. Nasze oferty są starannie wyselekcjonowane, aby zapewnić najwyższą jakość i zaspkoić potrzeby naszych Klientów.</p>
+
+            <!-- Tabela cenowa Stripe -->
+             <h3>Nasze Plany Cenowe</h3>
+             <div id="pricing-table">       
+<stripe-pricing-table pricing-table-id="prctbl_1R8M2PIMvKBMrhlExpbyhka7"
+publishable-key="pk_live_51Ne3NEIMvKBMrhlEjYDipe2Y6fMD63oXUUQ9WKwshadTTQqXRUtlhB0h99PRzRkPazovy88VPDdYIDNyZob42Hct00YGrc3fxe">
+</stripe-pricing-table>
+             </div>
             </section>
         <section id="omnie">
             <h2>O mnie</h2>
