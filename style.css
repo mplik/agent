@@ -5,7 +5,7 @@ body {
     background-color: #f5f5f5;
 }
 
-header {
+header { /* Nagłówek */
     background-color: #4caf58;
     color: white;
     text-align: center;
@@ -28,17 +28,18 @@ header {
     height: auto; /* Zachowanie proporcji obrazu */
 }
 
-nav {
+nav { /* Nawigacja */
     margin: 20px 0;
 }
 
-nav a {
+nav a { /* Linki w nawigacji */
+    font-size: 18px; /* Rozmiar czcionki linków */
     margin: 0 15px;
     color: white;
     text-decoration: none;
 }
 
-section {
+section { /* Sekcja z treścią */
     padding: 20px;
     margin: 20px;
     background: white;
@@ -46,7 +47,7 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-footer {
+footer { /* Stopka */
     text-align: center;
     padding: 10px 0;
     background-color: #4caf58;
@@ -55,6 +56,46 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/*dodnie animacji i przejść8*/
+button, a {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Przejście dla tła i koloru tekstu */
+}
+
+button:hover, a:hover {
+    background-color: #45a049; /* Zmiana koloru tła przy najechaniu */
+    color: white; /* Zmiana koloru tekstu przy najechaniu */
+}
+
+h1, h2, h3 {
+    animation: fadeIn 1s ease-in; /* Animacja pojawiania się nagłówków */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Początkowa przezroczystość */
+    }
+    to {
+        opacity: 1; /* Końcowa przezroczystość */
+    }
+}
+
+img {
+    transition: transform 0.3s ease; /* Przejście dla transformacji */
+}
+
+img:hover {
+    transform: scale(1.05); /* Powiększenie obrazu przy najechaniu */
+}
+
+.card {
+    transition: box-shadow 0.3s ease; /* Przejście dla cienia karty */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Zmiana cienia karty przy najechaniu */
+}
+
 
 /* Styl dla ekranów mobilnych */
 @media (max-width: 768px) {
