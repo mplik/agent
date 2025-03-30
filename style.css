@@ -12,6 +12,12 @@ header {
     padding: 1em 0;
 }
 
+.highlight {
+    background-color: lightpink; /* Kolor tła dla wyróżnionego tekstu nr licencji */
+    padding: 2px; /* Padding wokół wyróżnionego tekstu */
+    
+}
+
 .logo {
     width: 150px; /* Szerokość logo */
     height: auto; /* Automatyczna wysokość proporcjonalna do szerokości */
