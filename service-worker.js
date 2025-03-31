@@ -1,6 +1,14 @@
-importScripts('cache-urls.js');
-
 const CACHE_NAME = 'agent-cache-v1';
+
+const urlsToCache = [
+    '/',
+    '/index.html',
+    '/style.css',
+    '/script.js',
+    '/images/MPLIK.PL sprzedaż Stripe Climate-1.png',
+    '/images/MPLIK.PL_sprzedaż_Stripe_Climate.png',
+    '/images/domek_81kb_500_500.png',
+];
 
 // Instalacja service workera
 self.addEventListener('install', event => {
