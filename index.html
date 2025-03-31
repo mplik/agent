@@ -71,17 +71,16 @@ publishable-key="pk_live_51Ne3NEIMvKBMrhlEjYDipe2Y6fMD63oXUUQ9WKwshadTTQqXRUtlhB
             <p>&copy; 2024 Agent Nieruchomości. Wszelkie prawa zastrzeżone.</p>
         </footer>
         
-        <!-- Rejestracja service workera -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                }, function(err) {
-                    console.log('Service Worker registration failed:', err);
+        <script>
+            if ('serviceWorker' in navigator) { //rejestracja serwisu
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('./service-worker.js').then((registration) => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, (error) => {
+                        console.log('ServiceWorker registration failed: ', error);
+                    });
                 });
-            });
-        }
-    </script>
+            }
+        </script>
     </body>
 </head>
