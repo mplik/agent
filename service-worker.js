@@ -1,4 +1,7 @@
+importScripts('cache-urls.js');
+
 const CACHE_NAME = 'agent-cache-v1';
+
 // Instalacja service workera
 self.addEventListener('install', event => {
     event.waitUntil(
