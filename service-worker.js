@@ -4,9 +4,11 @@ const urlsToCache = [
     '/',
     '/index.html',
     '/style.css',
+    '/manifest.json',
     '/script.js',
     '/images/flaga_7kb_500-500.png',
-    '/images/flaga_7kb_250_250.png',        
+    '/images/flaga_7kb_250_250.png',
+    '/fallback.html' // plik istniejacy w razie braku internetu        
 ];
 
 // Instalowanie service worker
