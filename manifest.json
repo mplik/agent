@@ -1,26 +1,22 @@
 {
-    "name": "Agent Nieruchomości",
-    "short_name": "Agent",
-    "start_url": "/index.html",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
-    "icons": [
-      {
-        "src": "images/MPLIK.PL_sprzedaż_Stripe_Climate.png",
-        "sizes": "128x128",
-        "type": "image/png"
-      },
-      {
-        "src": "images/MPLIK.PL sprzedaż Stripe Climate-1.png",
-        "sizes": "1024x1024",
-        "type": "image/png"
-      },
-      {
-        "src": "images/domek_81kb_500_500.png",
-        "sizes": "500x500",
-        "type": "image/png"
-      }
-    ],
-    "description": "Oferujemy szeroki wybór nieruchomości, w tym mieszkania, lokale, domy oraz działki. Nasze oferty są starannie wyselekcjonowane, aby zapewnić najwyższą jakość i zaspokoić potrzeby naszych klientów."
-  }
+  "name": "Agent Nieruchomości",
+  "short_name": "Agent Nieruchomości",
+  "description": "Oferujemy szeroki wybór nieruchomości, w tym mieszkania, lokale, domy oraz działki. Nasze oferty są starannie wyselekcjonowane, aby zapewnić najwyższą jakość i zaspokoić potrzeby naszych klientów.",
+  "id": "/agent/index.html",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "images/flaga_7kb_500-500.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    },
+    {
+      "src": "images/flaga_7kb_250_250.png",
+      "sizes": "250x250",
+      "type": "image/png"
+    }
+  ]
+}
