@@ -1,10 +1,10 @@
 {
     "name": "Agent Nieruchomości",
     "short_name": "Agent",
-    "start_url": "/index.html",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "theme_color": "#ffffff",
     "icons": [
       {
         "src": "images/MPLIK.PL_sprzedaż_Stripe_Climate.png",
