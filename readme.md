@@ -44,3 +44,13 @@ Aby zobaczyć pełną tabelę cenową, odwiedź naszą stronę i sprawdź sekcj�
 
 ## Licencja
 To repozytorium jest licencjonowane na zasadach MIT License.
+
+## Kontakt
+Jeżeli masz jakiekolwiek pytania lub chcesz umówić się na spotkanie, skontaktuj się ze mną.
+- Email: [biuro@mplik.pl](mailto:biuro@mplik.pl)
+- Telefon: (+48)533 789 096
+
+## Linki
+[![Odwiedź naszą stronę](https://img.shields.io/badge/Odwiedź%20naszą%20stronę-Click%20Here-blue)][buyLink]
+
+[buyLink]: https://buy.stripe.com/28o03lefZ95H37i8wR
