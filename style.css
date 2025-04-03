@@ -121,3 +121,47 @@ img:hover {
             padding: 5px 0; /* Zmniejszenie paddingu stopki */
         }
     }
+
+    #opinie {
+        background-color: #f9f9f9;
+        padding: 2em;
+        text-align: center;
+    }
+    
+    #opinie h2 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        color: #4caf58;
+    }
+    
+    .opinia {
+        margin-bottom: 1.5em;
+        font-style: italic;
+    }
+    
+    .opinia span {
+        display: block;
+        margin-top: 0.5em;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .contact-btn {
+        display: inline-block;
+        background-color: #4caf58; /* Kolor tła przycisku */
+        color: white; /* Kolor tekstu przycisku */
+        text-decoration: none; /* Usunięcie podkreślenia z linku */
+        padding: 1em 2em; /* Padding wokół tekstu przycisku */
+        font-size: 1em; /* Rozmiar czcionki przycisku */
+        border-radius: 5px; /* Zaokrąglenie rogów przycisku */
+        transition: background-color 0.3s ease; /* Przejście dla koloru tła */
+        text-align: center; /* Wyśrodkowanie tekstu w przycisku */
+    }
+
+    .contact-btn:hover {
+        background-color: #45a049; /* Zmiana koloru tła przy najechaniu */
+        transform: scale(1.05); /* Powiększenie przycisku przy najechaniu */
+    }
+    .contact-btn:active {
+        background-color: #388e3c; /* Zmiana koloru tła przy kliknięciu */
+    }
