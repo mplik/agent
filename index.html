@@ -95,5 +95,38 @@ publishable-key="pk_live_51Ne3NEIMvKBMrhlEjYDipe2Y6fMD63oXUUQ9WKwshadTTQqXRUtlhB
                 });
             }
         </script>
+<!--script efekt przewijania sekcji-->
+<script>
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+<!--animacja dla opini klietów-->
+<script>
+    const opinie = document.querySelectorAll('.opinia');
+
+    const opinieObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    opinie.forEach(opinia => {
+        opinieObserver.observe(opinia);
+    });
+</script>
     </body>
 </head>

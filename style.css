@@ -28,6 +28,7 @@ header { /* Nagłówek */
     height: auto; /* Zachowanie proporcji obrazu */
 }
 
+
 nav { /* Nawigacja */
     margin: 20px 0;
 }
@@ -85,7 +86,7 @@ img {
 }
 
 img:hover {
-    transform: scale(1.05); /* Powiększenie obrazu przy najechaniu */
+    transform: scale(1.05) rotate(5deg); /* Powiększenie obrazu przy najechaniu */
 }
 
 .card {
