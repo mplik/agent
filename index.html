@@ -15,7 +15,8 @@
         <meta name="keywords" content="nieruchomości, mieszkania, lokale, domy, działki, pośrednik, oferta" />
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="styles.css"> <!-- Dodanie pliku CSS -->
-        <link rel="icon" href="images/flaga_7kb_500-500.png" sizes="500x500" />
+        <link rel="icon" href="images/flaga_1000x1000.png" sizes="1000x1000" /> <!-- Ikona strony -->
+        <link rel="icon" href="images/flaga_7kb_500-500.png" sizes="500x500" /> <!-- Ikona strony -->
         <link rel="icon" href="images/flaga_7kb_250_250.png" sizes="250x250" />
         <link rel="apple-touch-icon" href="images/flaga_7kb_500-500.png" sizes="500x500" />
         <link rel="apple-touch-icon" href="images/flaga_7kb_250_250.png" sizes="250x250" />
@@ -85,11 +86,28 @@ publishable-key="pk_live_51Ne3NEIMvKBMrhlEjYDipe2Y6fMD63oXUUQ9WKwshadTTQqXRUtlhB
         </footer>
         
         <script>
-            if ('serviceWorker' in navigator) { //rejestracja serwisu
+            if ('serviceWorker' in navigator) { // Rejestracja Service Workera
                 window.addEventListener('load', () => {
                     navigator.serviceWorker.register('./service-worker.js').then((registration) => {
                         console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                    }, (error) => {
+        
+                        // Obsługa aktualizacji Service Workera
+                        registration.onupdatefound = () => {
+                            const installingWorker = registration.installing;
+                            installingWorker.onstatechange = () => {
+                                if (installingWorker.state === 'installed') {
+                                    if (navigator.serviceWorker.controller) {
+                                        // Nowa wersja dostępna
+                                        console.log('Nowa wersja Service Workera jest dostępna.');
+                                        alert('Nowa wersja strony jest dostępna. Odśwież stronę, aby ją załadować.');
+                                    } else {
+                                        // Zasoby zostały zbuforowane
+                                        console.log('Zasoby zostały zbuforowane do użytku offline.');
+                                    }
+                                }
+                            };
+                        };
+                    }).catch((error) => {
                         console.log('ServiceWorker registration failed: ', error);
                     });
                 });

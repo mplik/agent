@@ -4,8 +4,11 @@ const urlsToCache = [
     '/',
     '/index.html',
     '/style.css',
+    '/styles.css',
     '/manifest.json',
     '/script.js',
+    '/images/domek_81kb_500_500.png',
+    '/images/flaga_1000x1000.png',
     '/images/flaga_7kb_500-500.png',
     '/images/flaga_7kb_250_250.png',
     '/fallback.html' // plik istniejacy w razie braku internetu        
