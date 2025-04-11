@@ -27,6 +27,8 @@
     
         <!-- Dodanie Stripe.js do strony -->
         <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <!-- Dodanie PayPal do strony -->
+        <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="BWKN6EGRKUPBW"></script>
 
         <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCQ25VM5PE"></script>
@@ -57,6 +59,14 @@
 <stripe-pricing-table pricing-table-id="prctbl_1R8M2PIMvKBMrhlExpbyhka7"
 publishable-key="pk_live_51Ne3NEIMvKBMrhlEjYDipe2Y6fMD63oXUUQ9WKwshadTTQqXRUtlhB0h99PRzRkPazovy88VPDdYIDNyZob42Hct00YGrc3fxe">
 </stripe-pricing-table>
+             </div>
+             <div class="paypal-container">
+                <p>Zapłać szybko i bezpiecznie za swoje produkty za pomocą PayPal</p>
+                <!-- Przycisk PayPal do zakupu -->
+<paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+<script>
+  cartPaypal.Cart({ id: "pp-view-cart" })
+</script>
              </div>
             </section>
         <section id="omnie">
