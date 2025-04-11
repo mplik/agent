@@ -60,7 +60,8 @@
 publishable-key="pk_live_51Ne3NEIMvKBMrhlEjYDipe2Y6fMD63oXUUQ9WKwshadTTQqXRUtlhB0h99PRzRkPazovy88VPDdYIDNyZob42Hct00YGrc3fxe">
 </stripe-pricing-table>
              </div>
-             <div class="paypal-container">
+             <div class="paypal-container hidden">
+                <button class="close-button">&times;</button> <!-- Przycisk zamknięcia -->
                 <p>Zapłać szybko i bezpiecznie za swoje produkty za pomocą <span class="highlight-paypal">PayPal</span></p>
                 <!-- Przycisk PayPal do zakupu -->
 <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
@@ -159,6 +160,31 @@ publishable-key="pk_live_51Ne3NEIMvKBMrhlEjYDipe2Y6fMD63oXUUQ9WKwshadTTQqXRUtlhB
 
     opinie.forEach(opinia => {
         opinieObserver.observe(opinia);
+    });
+</script>
+
+<!-- Animacja dla kontenera PayPal -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const paypalContainer = document.querySelector('.paypal-container');
+        const closeButton = document.querySelector('.close-button');
+
+        // Obserwator do animacji wjeżdżania kontenera
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    paypalContainer.classList.add('show'); // Dodanie klasy, gdy kontener jest widoczny
+                    paypalContainer.classList.remove('hidden');
+                }
+            });
+        });
+
+        observer.observe(paypalContainer); // Obserwacja kontenera PayPal
+
+        // Obsługa przycisku zamykającego
+        closeButton.addEventListener('click', () => {
+            paypalContainer.style.display = 'none'; // Ukrycie kontenera po kliknięciu
+        });
     });
 </script>
     </body>
