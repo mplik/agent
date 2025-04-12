@@ -2,7 +2,7 @@
   "name": "Agent Nieruchomości",
   "short_name": "Agent Nieruchomości",
   "description": "Agent Nieruchomości",
-  "id": "/index.html",
+  "id": "/agent/index.html",
   "start_url": "/index.html",
   "scope": "/",
   "display": "standalone",
