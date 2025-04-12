@@ -1,9 +1,9 @@
 {
   "name": "Agent Nieruchomości",
   "short_name": "Agent Nieruchomości",
-  "description": "Oferujemy szeroki wybór nieruchomości, w tym mieszkania, lokale, domy oraz działki. Nasze oferty są starannie wyselekcjonowane, aby zapewnić najwyższą jakość i zaspokoić potrzeby naszych klientów.",
+  "description": "Agent Nieruchomości",
   "id": "/agent/index.html",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
