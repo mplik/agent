@@ -2,6 +2,12 @@
 
 # Agent Nieruchomości
 
+--
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=mplik/agent@github)](https://gitads.dev/v1/ad-track?source=mplik/agent@github)
+
+--
+
 **Repozytorium:** [mplik/agent](https://github.com/mplik/agent)
 
 ## Opis
