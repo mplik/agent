@@ -1,3 +1,5 @@
+<!-- GitAds-Verify: HVQ6JDBBQBAPSUVOXSMSNA4S9IFIGKG9 -->
+
 # Agent Nieruchomości
 
 **Repozytorium:** [mplik/agent](https://github.com/mplik/agent)
